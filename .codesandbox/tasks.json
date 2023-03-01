@@ -1,0 +1,21 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "docker run -p 8080:8080": {
+      "name": "docker run -p 8080:8080",
+      "command": "docker run -p 8080:8080",
+      "runAtStart": true
+    },
+    "docker run -d --restart=always  lukemin/toshiki-proxypool": {
+      "name": "docker run -d --restart=always  lukemin/toshiki-proxypool",
+      "command": "docker run -d --restart=always  lukemin/toshiki-proxypool"
+    },
+    "docker run toshiki-proxypool": {
+      "name": "docker run toshiki-proxypool",
+      "command": "docker run toshiki-proxypool"
+    }
+  }
+}
